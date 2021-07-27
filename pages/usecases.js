@@ -98,7 +98,7 @@ function Header({ id, children }) {
   return (
     <div
       className="self-start sticky top-0
-    bg-spaceblack w-full mb-4 py-4 pt-10
+    bg-temporalblack w-full mb-4 py-4 pt-10
  border-t-2 border-temporalblue
     ">
       <h2

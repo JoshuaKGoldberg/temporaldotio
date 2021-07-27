@@ -140,7 +140,8 @@ function VSItem({ header, children, defaultState = false }) {
     <li className="border-b border-white">
       <div
         className={
-          (state ? ' bg-gray5 text-spaceblack' : '') + ' p-4 border-b border-spaceblack text-2xl'
+          (state ? ' bg-temporalgray5 text-temporalblack' : '') +
+          ' p-4 border-b border-temporalblack text-2xl'
         }>
         <button
           onClick={() => setState(!state)}
@@ -180,7 +181,7 @@ function VSItem({ header, children, defaultState = false }) {
         </button>
       </div>
       {state && (
-        <div className={(state ? 'bg-white text-spaceblack' : '') + ' p-4'}>{children}</div>
+        <div className={(state ? 'bg-white text-temporalblack' : '') + ' p-4'}>{children}</div>
       )}
     </li>
   );

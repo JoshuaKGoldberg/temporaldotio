@@ -95,7 +95,7 @@ const CaseStudies = () => {
             <Tab
               key={quote.img}
               selectedClassName="case-study--active"
-              className="transform hover:scale-125 scale-75 transition-all cursor-pointer filter grayscale p-2 grid place-items-center border-spaceblack">
+              className="transform hover:scale-125 scale-75 transition-all cursor-pointer filter grayscale p-2 grid place-items-center border-temporalblack">
               <img
                 className="h-12 w-12 object-cover"
                 src={quote.logo}

@@ -2,7 +2,7 @@ export function Banner() {
   const [open, setOpen] = useLocalStorage('bannerOpen', true);
   if (!open) return null;
   return (
-    <div className="relative bg-temporalblue text-spaceblack text-center py-2">
+    <div className="relative bg-temporalblue text-temporalblack text-center py-2">
       <a className=" hover:text-blue-800" href="https://docs.temporal.io/blog/funding-announcement">
         <span role="img" aria-label="Celebration" className="hidden md:inline">
           🎉
@@ -15,7 +15,7 @@ export function Banner() {
       </a>
       <button onClick={() => setOpen(false)}>
         <svg
-          className="absolute right-0 top-0 mr-2 mt-3 md:mt-2 w-5 sm:w-6 h-5 sm:h-6 text-spaceblack"
+          className="absolute right-0 top-0 mr-2 mt-3 md:mt-2 w-5 sm:w-6 h-5 sm:h-6 text-temporalblack"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

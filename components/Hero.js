@@ -8,7 +8,7 @@ import * as HeroSamples from './HeroSamples';
 
 export default function Hero() {
   const [lang, setLang] = useLocalStorage('langpref', 'Go');
-  const isMobile = useMediaQuery('(max-width: 768px)', true, false);
+  // const isMobile = useMediaQuery('(max-width: 768px)', true, false);
   const dynamicCodeSample = {
     Go: HeroSamples.Go,
     Java: HeroSamples.Java,
@@ -41,7 +41,15 @@ export default function Hero() {
         <div className="flex flex-1 flex-col">
           <div className="mt-8">
             <h1 className="text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase">
-              Build Invincible Apps
+              Build{' '}
+              <span
+                className="text-transparent bg-clip-text 
+                bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
+                ">
+                {/* bg-gradient-to-r from-temporalblue via-temporallightteal to-temporalpurple */}
+                Invincible
+              </span>{' '}
+              Apps
             </h1>
             <p className="text-2xl mb-8">
               {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
@@ -103,18 +111,18 @@ function useLocalStorage(key, initialValue) {
   return [storedValue, setValue];
 }
 
-// https://www.30secondsofcode.org/react/s/use-media-query
-function useMediaQuery(query, whenTrue, whenFalse) {
-  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return whenFalse;
+// // https://www.30secondsofcode.org/react/s/use-media-query
+// function useMediaQuery(query, whenTrue, whenFalse) {
+//   if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return whenFalse;
 
-  const mediaQuery = window.matchMedia(query);
-  const [match, setMatch] = React.useState(!!mediaQuery.matches);
+//   const mediaQuery = window.matchMedia(query);
+//   const [match, setMatch] = React.useState(!!mediaQuery.matches);
 
-  React.useEffect(() => {
-    const handler = () => setMatch(!!mediaQuery.matches);
-    mediaQuery.addListener(handler);
-    return () => mediaQuery.removeListener(handler);
-  }, []);
+//   React.useEffect(() => {
+//     const handler = () => setMatch(!!mediaQuery.matches);
+//     mediaQuery.addListener(handler);
+//     return () => mediaQuery.removeListener(handler);
+//   }, []);
 
-  return match ? whenTrue : whenFalse;
-}
+//   return match ? whenTrue : whenFalse;
+// }

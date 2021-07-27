@@ -59,7 +59,9 @@ export const OL = ({ children }) => <ol className="space-y-4 mb-4">{children}</o
 export const UL = ({ children }) => <ul className="space-y-4 mb-4">{children}</ul>;
 export const LI = ({ children }) => <li className="list-disc ml-6">{children}</li>;
 export const Blockquote = ({ children }) => (
-  <div className=" border-l-2 border-temporalblue bg-lightgray text-spaceblack">{children}</div>
+  <div className=" border-l-2 border-temporalblue bg-temporalgray1 text-temporalblack">
+    {children}
+  </div>
 );
 export const Del = ({ children }) => <code className="line-through">{children}</code>;
 export const Hr = ({ children }) => <code className="my-4">{children}</code>;

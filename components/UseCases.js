@@ -16,15 +16,15 @@ export default function UseCases() {
     <section
       id="use-cases"
       className={`
-    border-b border-spaceblack
+    border-b border-temporalblack
     container mx-auto
-     bg-gray5
+     bg-temporalgray5
     flex flex-col pt-16
     `}>
-      <h1 className="container pl-4 mb-16 md:pl-8 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-spaceblack">
+      <h1 className="container pl-4 mb-16 md:pl-8 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-temporalblack">
         Use Cases
       </h1>
-      <ul className="accordion border-t border-b border-spaceblack">
+      <ul className="accordion border-t border-b border-temporalblack">
         <UCaseItem header="Microservices Orchestration" defaultState>
           <LBimage
             thumbnail="/samples/screenshot-account-transfer.svg"
@@ -199,11 +199,11 @@ function LBimage({ thumbnail, mainSrc, alt }) {
 function UCaseItem({ header, children, defaultState = true }) {
   const [state, setState] = React.useState(defaultState);
   return (
-    <li className="border-t border-spaceblack">
+    <li className="border-t border-temporalblack">
       <div
         className={
-          (state ? ' bg-gray5' : '') +
-          ' text-spaceblack p-4 md:p-8 border-b border-spaceblack text-2xl'
+          (state ? ' bg-temporalgray5' : '') +
+          ' text-temporalblack p-4 md:p-8 border-b border-temporalblack text-2xl'
         }>
         <button
           onClick={() => setState(!state)}
@@ -238,7 +238,7 @@ function UCaseItem({ header, children, defaultState = true }) {
         </button>
       </div>
       {state && (
-        <div className={(state ? 'bg-white ' : '') + 'text-spaceblack text-xl p-4 md:p-8'}>
+        <div className={(state ? 'bg-white ' : '') + 'text-temporalblack text-xl p-4 md:p-8'}>
           {children}
         </div>
       )}

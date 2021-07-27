@@ -5,11 +5,11 @@ export default function JoinUs() {
     <section
       id="join-us"
       className={`
-    border-b border-lightgray min-h-screen max-h-[1080px]
+    border-b border-temporalgray1 min-h-screen max-h-[1080px]
     flex flex-col sm:flex-row
     container mx-auto
     `}>
-      <div className="flex-1 flex flex-col justify-between sm:border-r border-lightgray px-8 py-16">
+      <div className="flex-1 flex flex-col justify-between sm:border-r border-temporalgray1 px-8 py-16">
         <h2 className="text-4xl leading-48 sm:text-60 sm:leading-60 mb-8">
           Experience at the largest scale. Backing from the greatest investors.
         </h2>
@@ -20,10 +20,10 @@ export default function JoinUs() {
           <p className="text-lg inline">Seriously, we're hiring</p>
         </div>
       </div>
-      <div className="flex flex-col flex-1 border-t sm:border-t-0 border-lightgray">
-        <div className="px-4 sm:px-8 py-4 sm:py-16 flex-1 border-b border-lightgray flex items-center">
+      <div className="flex flex-col flex-1 border-t sm:border-t-0 border-temporalgray1">
+        <div className="px-4 sm:px-8 py-4 sm:py-16 flex-1 border-b border-temporalgray1 flex items-center">
           <img
-            className="rounded-full w-16 my-4 mr-8 border border-lightgray"
+            className="rounded-full w-16 my-4 mr-8 border border-temporalgray1"
             src="/logos/photo-samar.png"
             alt="samar abbas"></img>
           <div>
@@ -35,9 +35,9 @@ export default function JoinUs() {
             </div>
           </div>
         </div>
-        <div className="px-4 sm:px-8 py-4 sm:py-16  flex-1 border-b border-lightgray flex items-center">
+        <div className="px-4 sm:px-8 py-4 sm:py-16  flex-1 border-b border-temporalgray1 flex items-center">
           <img
-            className="rounded-full w-16 my-4 mr-8 border border-lightgray"
+            className="rounded-full w-16 my-4 mr-8 border border-temporalgray1"
             src="/logos/photo-maxim.png"
             alt="Maxim Fateev"></img>
           <div>
@@ -50,14 +50,14 @@ export default function JoinUs() {
           </div>
         </div>
         <div className="flex-1 flex">
-          <div className="flex-1 flex items-center justify-center border-lightgray border-r">
+          <div className="flex-1 flex items-center justify-center border-temporalgray1 border-r">
             <img
               style={{ filter: 'brightness(1.5) grayscale(1)' }}
               className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain"
               src="/logos/logo-amplify.png"
               alt="vc"></img>
           </div>
-          <div className="flex-1 flex items-center justify-center border-lightgray border-r">
+          <div className="flex-1 flex items-center justify-center border-temporalgray1 border-r">
             <img
               style={{ filter: 'brightness(1.5) grayscale(1)' }}
               className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain"

@@ -4,8 +4,8 @@ export default function FinalQuote() {
       id="final-quote"
       className={`
     border-b border-white
-  text-spaceblack
-    flex flex-col bg-lightteal
+  text-temporalblack
+    flex flex-col bg-temporallightteal
     container mx-auto
     `}>
       <blockquote className="text-xl sm:text-4xl leading-xl sm:leading-48 flex-1 px-8 pt-8 pb-8 sm:pt-16 sm:pb-16">
@@ -22,9 +22,9 @@ export default function FinalQuote() {
           Temporal and would’ve very likely done a worse job.”
         </p>
       </blockquote>
-      <div className="flex items-center p-8 border-t border-spaceblack">
+      <div className="flex items-center p-8 border-t border-temporalblack">
         <img
-          className="inline mr-4 w-16 h-16 rounded-full border border-spaceblack"
+          className="inline mr-4 w-16 h-16 rounded-full border border-temporalblack"
           src="/logos/photo-Mitchell.png"
           alt="Mitchell Hashimoto"
         />
